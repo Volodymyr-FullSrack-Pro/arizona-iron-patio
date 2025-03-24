@@ -1,0 +1,28 @@
+.header__top {
+	background-color: var(--bg-blue);
+}
+
+.contact-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 14px;
+	padding: 8px 0;
+	opacity: 0.8;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__city {
+		color: var(--c-white);
+	}
+
+	&__phone {
+		color: var(--c-white);
+		opacity: 0.7;
+	}
+}
