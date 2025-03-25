@@ -31,35 +31,39 @@
 				<div class='nav'>
 					<include src="html/components/btn-outline/_index.html" locals='{"text": "catalog"}'>
 					</include>
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="/" class="nav__link">Home</a>
-						</li>
-						<li class="nav__item">
-							<a href="/products" class="nav__link">Products</a>
-						</li>
-						<li class="nav__item">
-							<a href="/photo-gallery" class="nav__link">Photo Gallery</a>
-						</li>
-						<li class="nav__item">
-							<a href="/about-us" class="nav__link">About Us</a>
-						</li>
-						<li class="nav__item">
-							<a href="/blog" class="nav__link">Blog</a>
-						</li>
-					</ul>
-					<include src="html/components/logo/_index.html"></include>
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="/comercial-applications" class="nav__link">Commercial Applications</a>
-						</li>
-						<li class="nav__item">
-							<a href="/contact" class="nav__link">Contact</a>
-						</li>
-						<li class="nav__item">
-							<a href="/fabric-visualizer" class="nav__link">Fabric Visualizer</a>
-						</li>
-					</ul>
+					<div class="nav__wrapper">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="/" class="nav__link">Home</a>
+							</li>
+							<li class="nav__item">
+								<a href="#products" class="nav__link nav__link--has-dropdown">Products</a>
+							</li>
+							<li class="nav__item">
+								<a href="#photo-gallery" class="nav__link">Photo Gallery</a>
+							</li>
+							<li class="nav__item">
+								<a href="#about-us" class="nav__link">About Us</a>
+							</li>
+							<li class="nav__item">
+								<a href="#blog" class="nav__link">Blog</a>
+							</li>
+						</ul>
+						<div class='nav__logo'>
+							<include src="html/components/logo/_index.html"></include>
+						</div>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="#comercial-applications" class="nav__link">Commercial Applications</a>
+							</li>
+							<li class="nav__item">
+								<a href="#contact" class="nav__link">Contact</a>
+							</li>
+							<li class="nav__item">
+								<a href="#fabric-visualizer" class="nav__link">Fabric Visualizer</a>
+							</li>
+						</ul>
+					</div>
 					<include src="html/components/social/_index.html"></include>
 				</div>
 			</div>

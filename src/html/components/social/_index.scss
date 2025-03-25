@@ -1,0 +1,48 @@
+.social {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	transition: border-color 0.3s ease;
+
+	&[class*='icon-'] {
+		transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+		&:hover {
+			scale: 1.1;
+		}
+
+		&.icon-fb:hover {
+			box-shadow: 0 0 8px 2px #1877f2;
+		}
+
+		&.icon-in:hover {
+			box-shadow: 0 0 8px 2px #c13584;
+		}
+
+		&.icon-yt:hover {
+			box-shadow: 0 0 8px 2px #ff0f0f;
+		}
+	}
+
+	&.icon-fb {
+		border-color: #1877f2;
+	}
+
+	&.icon-in {
+		border-color: #c13584;
+	}
+
+	&.icon-yt {
+		border-color: #ff0f0f;
+	}
+}
